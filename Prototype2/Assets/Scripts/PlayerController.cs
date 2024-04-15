@@ -1,15 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     //Horizontal input
     private float horizontalInput;
     //Player Speed
-    public float speed = 10.0f;
+    [SerializedField] private float speed = 10.0f;
     //x Axis Limit
-    public float xRange = 10.0f;
+    [SerializedField] private float xRange = 10.0f;
     //Projectile prefab
     public GameObject projectilePrefab;
 
